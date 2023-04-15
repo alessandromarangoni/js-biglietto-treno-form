@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(1, 1, 1, 0.605);
+}
+#hidden-section{
+    display: none;
+}
+
+#box-biglietto-generato{
+    background-color: rgba(73, 213, 255, 0.2);
+    padding: 0 10px;
+}
+
+.nome-box{
+    border-right: 2px solid rgba(128, 128, 128, 0.20);
+}

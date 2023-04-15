@@ -1,16 +1,17 @@
 let stampa = document.getElementById("bottone");
+let annulla = document.getElementById("annulla")
 
-let km = document.getElementById("km").value;
-let eta = document.getElementById("eta").value;
-let prezzoHtml = document.getElementById("prezzoHtml")
-let carrozza = document.getElementById("carrozza")
-let nome = document.getElementById("nome").value
-let codiceCp = document.getElementById("codice-cp")
-let offerta = document.getElementById("offerta")
-let nomePasseggero = document.getElementById("nome-passeggero").value
-let prezzoAlKm = 0.21; 
-var prezzo = km.value * prezzoAlKm
-
+// var km = document.getElementById("km").value;
+// var eta = document.getElementById("eta").value;
+// var prezzoHtml = document.getElementById("prezzoHtml")
+// var carrozza = document.getElementById("carrozza")
+// var nome = document.getElementById("nome").value
+// var codiceCp = document.getElementById("codice-cp")
+// var offerta = document.getElementById("offerta")
+// var nomePasseggero = document.getElementById("nome-passeggero").value
+// let prezzoAlKm = 0.21; 
+// var prezzo = km.value * prezzoAlKm
+// let hidden = document.getElementById("hidden-section")
 
 
 stampa.addEventListener("click",
@@ -26,6 +27,7 @@ function()
         prezzo = km * prezzoAlKm;
         let carrozza = document.getElementById("carrozza")
         let nomePasseggero = document.getElementById("nome-passeggero")
+        let hidden = document.getElementById("hidden-section")
 
         if ((km, nome)!= ""){
 
@@ -55,12 +57,23 @@ function()
             }
 
             nomePasseggero.innerHTML = `${nome}`
+            hidden.style.display='block'
         }
 
         else {
             alert("inserire tutti i dati richiesti")
         }
+
     }
 
+    
 
+)
+
+annulla.addEventListener("click",
+
+    function(){
+        let km = document.getElementById("km").value = "";
+        let nome = document.getElementById("nome").value = ""
+    }
 )

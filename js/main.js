@@ -43,7 +43,7 @@ function()
                 prezzo = prezzo 
                 prezzoHtml.innerHTML = `${prezzo.toFixed(2)} euro`
                 carrozza.innerHTML = Math.floor(Math.random()*15 + 1)
-                codiceCp.innerHTML = Math.floor(Math.random()*350 + 1)
+                codiceCp.innerHTML = Math.floor(Math.random()*100000 + 1)
                 offerta.innerHTML = `offerta standard`
             }
             nomePasseggero.innerHTML = `${nome}`

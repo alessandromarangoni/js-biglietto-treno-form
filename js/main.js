@@ -1,18 +1,6 @@
 let stampa = document.getElementById("bottone");
 let annulla = document.getElementById("annulla")
 
-// var km = document.getElementById("km").value;
-// var eta = document.getElementById("eta").value;
-// var prezzoHtml = document.getElementById("prezzoHtml")
-// var carrozza = document.getElementById("carrozza")
-// var nome = document.getElementById("nome").value
-// var codiceCp = document.getElementById("codice-cp")
-// var offerta = document.getElementById("offerta")
-// var nomePasseggero = document.getElementById("nome-passeggero").value
-// let prezzoAlKm = 0.21; 
-// var prezzo = km.value * prezzoAlKm
-// let hidden = document.getElementById("hidden-section")
-
 // genero un evento al click di stampa
 stampa.addEventListener("click",
 function()

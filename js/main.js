@@ -29,7 +29,7 @@ function()
         let nomePasseggero = document.getElementById("nome-passeggero")
         let hidden = document.getElementById("hidden-section")
 
-        if ((km, nome)!= ""){
+        if ((km | nome)!= ""){
 
             if (eta == "minorenne"){
                 prezzo = (prezzo - (prezzo * 0.2))

@@ -1,14 +1,14 @@
 let stampa = document.getElementById("bottone");
 
-const km = document.getElementById("km").value;
-const eta = document.getElementById("eta").value;
-const prezzoHtml = document.getElementById("prezzoHtml")
-const carrozza = document.getElementById("carrozza")
-const nome = document.getElementById("nome").value
-const codiceCp = document.getElementById("codice-cp")
-const offerta = document.getElementById("offerta")
-const nomePasseggero = document.getElementById("nome-passeggero").value
-const prezzoAlKm = 0.21; 
+let km = document.getElementById("km").value;
+let eta = document.getElementById("eta").value;
+let prezzoHtml = document.getElementById("prezzoHtml")
+let carrozza = document.getElementById("carrozza")
+let nome = document.getElementById("nome").value
+let codiceCp = document.getElementById("codice-cp")
+let offerta = document.getElementById("offerta")
+let nomePasseggero = document.getElementById("nome-passeggero").value
+let prezzoAlKm = 0.21; 
 var prezzo = km.value * prezzoAlKm
 
 
@@ -16,16 +16,16 @@ var prezzo = km.value * prezzoAlKm
 stampa.addEventListener("click",
 function()
     {
-        const km = document.getElementById("km").value;
-        const eta = document.getElementById("eta").value;
-        const prezzoHtml = document.getElementById("prezzoHtml")
-        const nome = document.getElementById("nome").value
-        const offerta = document.getElementById("offerta")
-        const codiceCp = document.getElementById("codice-cp")
-        const prezzoAlKm = 0.21; 
+        let km = document.getElementById("km").value;
+        let eta = document.getElementById("eta").value;
+        let prezzoHtml = document.getElementById("prezzoHtml")
+        let nome = document.getElementById("nome").value
+        let offerta = document.getElementById("offerta")
+        let codiceCp = document.getElementById("codice-cp")
+        let prezzoAlKm = 0.21; 
         prezzo = km * prezzoAlKm;
-        const carrozza = document.getElementById("carrozza")
-        const nomePasseggero = document.getElementById("nome-passeggero")
+        let carrozza = document.getElementById("carrozza")
+        let nomePasseggero = document.getElementById("nome-passeggero")
 
         if ((km, nome)!= ""){
 

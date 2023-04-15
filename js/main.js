@@ -25,8 +25,6 @@ function()
             if (eta == "minorenne"){
                 prezzo = (prezzo - (prezzo * 0.2))
                 prezzoHtml.innerHTML = `${prezzo.toFixed(2)} euro`
-                carrozza.innerHTML = Math.floor(Math.random()*15 + 1)
-                codiceCp.innerHTML = Math.floor(Math.random()*350 + 1)
                 offerta.innerHTML = `offerta per minori`
 
             }
@@ -34,21 +32,19 @@ function()
             else if (eta == "over60"){
                 prezzo = (prezzo - (prezzo * 0.2))
                 prezzoHtml.innerHTML = `${prezzo.toFixed(2)} euro`
-                carrozza.innerHTML = Math.floor(Math.random()*15 + 1)
-                codiceCp.innerHTML = Math.floor(Math.random()*350 + 1)
                 offerta.innerHTML = `offerta senior`
             }
             // se è maggiorenne allora genero prezzo - sconto cp ecc
             else {
                 prezzo = prezzo 
                 prezzoHtml.innerHTML = `${prezzo.toFixed(2)} euro`
-                carrozza.innerHTML = Math.floor(Math.random()*15 + 1)
-                codiceCp.innerHTML = Math.floor(Math.random()*100000 + 1)
                 offerta.innerHTML = `offerta standard`
             }
             nomePasseggero.innerHTML = `${nome}`
             // faccio in modo che la seconda section si veda al click
             hidden.style.display='block'
+            carrozza.innerHTML = Math.floor(Math.random()*15 + 1)
+            codiceCp.innerHTML = Math.floor(Math.random()*100000 + 1)
         }
         // se i dati non sono compilati crea un alert
         else {

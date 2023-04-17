@@ -6,7 +6,7 @@ stampa.addEventListener("click",
 function()
     {
         // dichiaro e do valore alle variabili
-        let km = document.getElementById("km").value;
+        let km = parseInt(document.getElementById("km").value);
         let eta = document.getElementById("eta").value;
         let prezzoHtml = document.getElementById("prezzoHtml")
         let nome = document.getElementById("nome").value
